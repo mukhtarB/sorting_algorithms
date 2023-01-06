@@ -5,7 +5,7 @@ void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 void merge_sort(int *array, size_t size);
 
 /**
- * merge_subarr - Sort a subarray of integers.
+ * m_subarr - Sort a subarray of integers.
  * @subarr: A subarray of an array of integers to sort.
  * @buff: A buffer to store the sorted subarray.
  * @front: The front index of the array.
@@ -51,7 +51,7 @@ void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back)
 		mid = front + (back - front) / 2;
 		merge_sort_recursive(subarr, buff, front, mid);
 		merge_sort_recursive(subarr, buff, mid, back);
-		merge_subarr(subarr, buff, front, mid, back);
+		m_subarr(subarr, buff, front, mid, back);
 	}
 }
 
