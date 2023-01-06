@@ -6,6 +6,7 @@
  * @array: pointer to array containing elements to swap
  * @idx1: index of first element
  * @idx2: index of second element
+ * @size: size of arr
  *
  */
 void swap(int *array, int idx1, int idx2, size_t size)
@@ -28,7 +29,7 @@ void swap(int *array, int idx1, int idx2, size_t size)
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min;
-	
+
 	if (array == NULL)
 		return;
 	if (size < 2)
