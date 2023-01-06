@@ -34,9 +34,9 @@ void max_heapify(int *array, size_t size, size_t base, size_t root)
 	large = root;
 
 	if (left < base && array[left] > array[large])
-        	large = left;
+		large = left;
 	if (right < base && array[right] > array[large])
-        	large = right;
+		large = right;
 
 	if (large != root)
 	{
