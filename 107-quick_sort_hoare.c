@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
- * swap - swap two int
+ * swaps - swap two int
  * @a: int
  * @b: int
  * Return: (void) Swaped int
  */
-void swap(int *a, int *b)
+void swaps(int *a, int *b)
 {
 	int tmp;
 
@@ -36,7 +36,7 @@ int partition(int *array, int low, int high, size_t size)
 
 		if (i < j)
 		{
-			swap(&array[i], &array[j]);
+			swaps(&array[i], &array[j]);
 			print_array(array, size);
 			i++;
 			j--;
